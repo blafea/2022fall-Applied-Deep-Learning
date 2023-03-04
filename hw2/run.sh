@@ -1,0 +1,10 @@
+python predict.py \
+--test_file $2 \
+--context_file $1 \
+--result_file $3 \
+--cs_model ./cs_model \
+--qa_model ./qa_model \
+--per_device_batch_size 2 \
+--learning_rate 3e-5 \
+--doc_stride 128 \
+--gradient_accumulation_steps 2 \
